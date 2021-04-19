@@ -1,0 +1,130 @@
+<!DOCTYPE html>  
+<head>  
+    <title>Anuvaad</title>  
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/style.css') }}"> 
+  
+</head>  
+<style>
+textarea{
+	font-size:32px;
+}
+.outputformat{
+	font-size:32px;
+}
+.submit{
+	font-size:20px;
+}
+h1{
+	text-align:center;
+}
+.inputcss{
+	height: 200px;
+	width: 500px;
+	margin-top: 0px;
+	margin-left: 150px;
+	font-size:32px;
+	border:5px solid #242222;
+	border-radius: 15px;
+	color:Black;
+	resize: none;
+	display: inline;
+	clear: both;
+}
+
+.submit {
+	height: 50px;
+	width: 150px;
+	border:3px solid Black;
+	color: black;
+	border-radius: 10px;
+	background-color: #92acd6;
+	margin-top: 30px;
+	margin-left: 630px;
+	font-size:20px;
+
+
+}
+.submit:hover {
+	height: 51px;
+	width: 150px;
+	background-color:#69ebfa;
+	font-size:20px;
+}
+
+
+.outputformat {
+	width:500px;
+	height: 200px;
+	font-size:32px;
+	background-color: white;	
+	border:5px solid #242222;
+	margin-left:70px;
+	border-radius: 15px;
+	
+}
+label {
+	display: inline-block;
+	color:Black;
+	margin-left:280px;
+	text-size:42px;
+	margin-top:5px;
+	
+}
+label2 {
+	display: inline-block;
+	color:Black;
+	margin-left:230px;
+	text-size:42px;
+	
+}
+.col1 {
+	float: left;
+	width: 50%;
+	margin-top: 0px;
+	
+}
+
+.col2{
+	float:right;
+	width:50%;
+	margin-top: 0px;
+
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style> 
+<body>  
+    <nav class="navigation"><img src="{{ url_for('static', filename='images/logo4.png') }}"></nav> 	
+
+    <form action = "http://localhost:5000/" method = "post">
+	<h1>Please Enter text in English to translate it to Hindi</h1>
+	<div class="row">
+	<div class="col1">
+	<label for="text"><h2>ENTER TEXT</h2> </label></div>
+	<div class="col2">
+ 	<label2 for="tran"><h2>TRANSLATED TEXT</h2></label></div></div>
+	<div class="row">
+	<div class="col1">
+	 	<textarea name="inputtext" class="inputcss" placeholder="   Start typing here..."></textarea>
+	 </div>
+	<div class="col2">
+	<div class="outputformat">
+    	{{translatedtext}}
+    	</div>
+	</div></div><br>
+	
+		<input type = "submit" class="submit" value="TRANSLATE">
+	
+</form>
+</body>  
+</html>  
+
+
+
+  
+
+

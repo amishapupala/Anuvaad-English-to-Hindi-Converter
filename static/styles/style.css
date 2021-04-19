@@ -1,0 +1,110 @@
+body
+{
+	margin: 0px;
+	background-color: #f2f4f7;
+}
+
+
+.navigation {
+	background-color: white;
+	display: block;
+	margin-top: 0px;
+	border-bottom: 2px solid #242222;
+}
+.logo{
+	height: 80px;
+	margin-left: 80px;
+
+}
+
+textarea{
+	font-size:32px;
+}
+.outputformat{
+	font-size:32px;
+}
+.submit{
+	font-size:20px;
+}
+h1{
+	text-align:center;
+}
+.inputcss{
+	height: 200px;
+	width: 500px;
+	margin-top: 0px;
+	margin-left: 150px;
+	font-size:32px;
+	border:5px solid #242222;
+	border-radius: 15px;
+	color:Black;
+	resize: none;
+	display: inline;
+	clear: both;
+}
+
+.submit {
+	height: 50px;
+	width: 150px;
+	border:3px solid Black;
+	color: black;
+	border-radius: 10px;
+	background-color: #92acd6;
+	margin-top: 30px;
+	margin-left: 630px;
+	font-size:20px;
+
+
+}
+.submit:hover {
+	height: 51px;
+	width: 150px;
+	background-color:#69ebfa;
+	font-size:20px;
+}
+
+
+.outputformat {
+	width:500px;
+	height: 200px;
+	font-size:32px;
+	background-color: white;	
+	border:5px solid #242222;
+	margin-left:70px;
+	border-radius: 15px;
+	
+}
+label {
+	display: inline-block;
+	color:Black;
+	margin-left:280px;
+	text-size:42px;
+	margin-top:5px;
+	
+}
+label2 {
+	display: inline-block;
+	color:Black;
+	margin-left:230px;
+	text-size:42px;
+	
+}
+.col1 {
+	float: left;
+	width: 50%;
+	margin-top: 0px;
+	
+}
+
+.col2{
+	float:right;
+	width:50%;
+	margin-top: 0px;
+
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
